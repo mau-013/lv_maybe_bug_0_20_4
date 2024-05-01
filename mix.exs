@@ -38,8 +38,9 @@ defmodule LvMaybeBug.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.3"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "0.20.3"},  # works
+      # {:phoenix_live_view, "0.20.3"},  # works
       # {:phoenix_live_view, "0.20.4"},  # does not work
+      {:phoenix_live_view, github: "phoenixframework/phoenix_live_view", branch: "main", override: true},
       {:floki, ">= 0.30.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.8.0"},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
